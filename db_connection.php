@@ -7,6 +7,6 @@ $db_name = 'e-learning';
 
 $connect = mysqli_connect($host,$userName,$password,$db_name);
 
-
+// 0=6\d(xn6<cR}+<n
 
 ?>

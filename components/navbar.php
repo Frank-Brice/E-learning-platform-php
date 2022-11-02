@@ -68,13 +68,13 @@
                         </div>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body text-center">
                         <ul>
                             <a href="" class="text-primary">
                                 <li>Home</li>
                             </a>
                             <a href="">
-                                <li>About Us</li>
+                                <li>AboutUs</li>
                             </a>
                             <a href="/courses.php">
                                 <li>Courses</li>

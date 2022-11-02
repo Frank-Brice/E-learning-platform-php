@@ -46,3 +46,14 @@
         display: none;
     }
 }
+
+/* responsive for detail-component */
+
+@media(max-width:550px){
+  .container .row .play-vid .video{
+    width: 135% !important;
+  }
+  .right-sidebar .side-list .small-size{
+    width: 320px !important;
+  }
+}

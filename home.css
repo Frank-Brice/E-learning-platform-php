@@ -20,6 +20,9 @@
     align-items: center;
     justify-content: center;
     color: #fff !important;
+    top: 0;
+    position: sticky;
+    z-index: 99;
     /* border-bottom: 1px solid #ccc; */
 }
 .nav-bar .container{
@@ -83,6 +86,7 @@
     background-color: #F27137;
     overflow: hidden;
     position: relative;
+    
 }
 .banner-area img{
     object-fit: cover;
@@ -149,6 +153,7 @@
 }
 
 /* categories section */
+
 #categories{
     position: relative !important;
 }
@@ -207,7 +212,9 @@
     background-color: #F27137 !important;
     color: #fff !important;
 }
+
 <!-- this is the card found in the home page 
+
 .card-img-top{
     object-fit: cover;
 }
@@ -224,4 +231,110 @@
 
 #maincourselist h5{
     font-size: 16px;
+}
+
+/* for the details-component */
+
+.play-contain{
+    padding-left: 2%;
+}
+.row{
+    display: flex !important;
+    /* justify-content: space-between !important; */
+    flex-wrap: wrap !important;
+}
+.play-vid{
+    flex-basis: 69% !important;
+}
+
+.right-sidebar{
+    flex-basis: 30% !important;
+}
+.play-vid video{
+    width: 100%;
+}
+
+.side-list{
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-bottom: 8px !important;
+}
+
+.side-list img{
+    width: 100% !important;
+}
+
+.side-list video{
+    width: 100% !important;
+}
+
+.side-list .small-size{
+    flex-basis: 49% !important;
+}
+
+.side-list .video-info{
+    flex-basis: 49% !important;
+}
+
+.play-vid .tags a{
+    color: #2B557F;
+    font-size: 13px;
+}
+.play-vid h3 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.play-info h4{
+    font-weight: 900;
+}
+
+.fa-star{
+    color: gold;
+}
+.fa-star-half-stroke {
+    color: gold;
+    
+}
+
+   /* this is for the categories link under the main video */
+a .try{
+    position: relative !important;
+}
+
+   /* This is for the card image under the main video */
+.play-vid hr{
+    border: 0;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+}
+.owner{
+    display: flex !important;
+    align-items: center;
+    margin-top: 20px;
+}
+.owner div{
+    flex: 1;
+    line-height: 18px;
+}
+.owner img{
+    width: 120px;
+    border-radius: 70%;
+    margin-right: 15px;
+}
+.owner .icons{
+    color: #000 !important;
+}
+.catbanner{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F27137;
+}
+.catbanner img{
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
 }
