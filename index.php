@@ -49,7 +49,7 @@ if(isset($_SESSION['name'])){
                                     <input type="password" id="password" name="password"
                                         class="form-control px-3 py-2 my-2" placeholder="enter your password" required>
                                     <span><a href="forget-password.php" class="text-italic color">forgot
-                                            password?</a></span><br>
+                                            password ?</a></span><br>
                                     <input type="submit" class="form-btn btn btn-lg border px-3 py-2 my-4"
                                         value="SignIn" name="submit">
                                     <span>Don't have an account ?<a href="signUp.php" class="text-italic color">

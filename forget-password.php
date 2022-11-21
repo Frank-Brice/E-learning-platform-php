@@ -40,7 +40,7 @@ if(isset($_SESSION['name'])){
                         <div class="col-lg-12">
                             <form class="form-group center-el h-100" method="POST" action="manage-password.php">
                                 <h3><img src="images/e-book.png" alt="logo" width="150px"></h3>
-                                <p>Forgot password?</p>
+                                <p>Forgot password ?</p>
                                 <div class="div my-3">
                                     <label for="email" class="text-capitalize">email</label>
                                     <input type="email" id="email" name="email" class="form-control px-3 py-2 my-2"

@@ -50,7 +50,7 @@
                 ?>
             </ul>
             <div class="side-bar">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="search-page.php"><i class="fa-solid fa-magnifying-glass"></i></a>
 
                 <!-- responsive nav-bar -->
 
