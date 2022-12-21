@@ -537,8 +537,12 @@ footer .content .link-boxes .box{
     width: 35px;
     background: #fff;
 }
-.link-boxes .box li a::before{
+/* .link-boxes .box li a::before{
     content: '> ';
+} */
+.fa-chevron-right{
+    height: 13px;
+    color: #fff;
 }
 .content .link-boxes .box li{
     margin: 6px 0;
@@ -586,7 +590,8 @@ footer .content .link-boxes .box{
 }
 footer .bottom-details{
     width: 100%;
-    background: #0F0844;
+    /* background: #5154b0; */
+    background: #000;
 }
 footer .bottom-details .bottom_text{
     max-width: 1250px;
@@ -612,6 +617,9 @@ footer .bottom-details .bottom_text{
 @media(max-width: 900px){
     footer .content .link-boxes{
         flex-wrap: wrap;
+    }
+    .fa-chevron-right{
+        display: none;
     }
     footer .content .link-boxes .input-box{
     width: 40%;

@@ -17,31 +17,35 @@
             <div class="link-boxes">
                 <ul class="box">
                     <li class="link_name">Company</li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Get Started</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li><i class="fa-solid fa-chevron-right"></i>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Contact Us</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Get Started</a></li>
                 </ul>
                 <ul class="box">
                     <li class="link_name">Services</li>
-                    <li><a href="#">App design</a></li>
-                    <li><a href="#">Web design</a></li>
-                    <li><a href="#">Logo design</a></li>
-                    <li><a href="#">Banner design</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">App design</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Web design</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Logo design</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Banner design</a></li>
                 </ul>
                 <ul class="box">
                     <li class="link_name">Account</li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">My account</a></li>
-                    <li><a href="#">Preferences</a></li>
-                    <li><a href="#">Purchase</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Profile</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">My account</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Preferences</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Purchase</a></li>
                 </ul>
                 <ul class="box">
                     <li class="link_name">Courses</li>
-                    <li><a href="#">HTML & CSS</a></li>
-                    <li><a href="#">Javascript</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Photography</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">HTML & CSS</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Javascript</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Music</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Photography</a></li>
                 </ul>
                 <ul class="box input-box">
                     <li class="link_name">Subscribe</li>
@@ -61,7 +65,7 @@
         </div>
     </footer>
 </body>
-
+<script src="//code.tidio.co/e4u1hvbyrd6iz02jnbbdvkqxm2przxk2.js" async></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
