@@ -40,7 +40,8 @@ if(isset($_SESSION['name'])){
                         <div class="col-lg-6">
                             <form class="form-group center-el h-100" method="POST" action="login.php">
                                 <h3><img src="images/e-book.png" alt="logo" width="40px"></h3>
-                                <p>Welcome to e-code-taught</p>
+                                <p>Welcome To Nkap-Learning <span><img src="../images/nkap-removebg-preview.png" alt=""
+                                            width="15%" height="50px"></span></p>
                                 <div class="div my-3">
                                     <label for="email" class="text-capitalize">email</label>
                                     <input type="email" id="email" name="email" class="form-control px-3 py-2 my-2"
@@ -59,7 +60,7 @@ if(isset($_SESSION['name'])){
 
                         </div>
                         <div class="col-lg-6">
-                            <img src="images/auth.jpg" alt="" class="card-img" width="100%">
+                            <img src="images/auth4.jpg" alt="" class="card-img" width="100%">
                         </div>
                     </div>
                 </div>

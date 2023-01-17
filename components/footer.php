@@ -3,8 +3,9 @@
         <div class="content">
             <div class="top">
                 <div class="logo-details">
-                    <i class="fa-brands fa-slack"></i>
-                    <span class="logo_name">E-Learning.</span>
+                    <!-- <i class="fa-brands fa-slack"></i> -->
+                    <img src="../images/nkap-removebg-preview.png" alt="" width="25%" height="80px">
+                    <span class="logo_name" style="font-family: 'Pacifico', cursive;">Nkap-Learning.</span>
                 </div>
                 <div class="media-icons">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>

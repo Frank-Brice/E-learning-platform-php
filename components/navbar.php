@@ -27,14 +27,14 @@
         <div class="container">
             <div class="brand-e">
                 <a href="/">
-                    <h3>e-learning<span>.</span></h3>
+                    <h3>Nkap-Learning<span>.</span></h3>
                 </a>
             </div>
             <ul class="mainNavs">
                 <a href="home.php">
                     <li>Home</li>
                 </a>
-                <a href="">
+                <a href="about-us.php">
                     <li>About Us</li>
                 </a>
                 <a href="courses.php">
@@ -46,7 +46,6 @@
                 } else {
                     echo '<a href=""><li>Programs</li></a>';
                 }
-
                 ?>
             </ul>
             <div class="side-bar">
@@ -63,7 +62,7 @@
                     <div class="offcanvas-header">
                         <div class="brand-e">
                             <a href="/" style="color: #F27137 ;">
-                                <h3 style="font-size:30px !important;">e-learning<span>.</span></h3>
+                                <h3 style="font-size:30px !important;">Nkap-Learning<span>.</span></h3>
                             </a>
                         </div>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

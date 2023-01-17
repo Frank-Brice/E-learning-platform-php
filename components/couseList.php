@@ -1,4 +1,4 @@
-<h1 class="text-center title">Explore Top Courses</h1>
+<h1 class="text-center title"><strong>Explore Top Courses</strong></h1>
 <div id="homeCourses" class="row courses my-5 d-flex align-content-center justify-content-center">
     <div class="col-lg-3  d-flex justify-content-space-between">
         <div class="card" style="width: 18rem;">

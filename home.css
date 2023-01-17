@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -79,7 +80,7 @@
 .side-bar img{
     width: 100%;
 }
-/* banner area */
+/* *banner area */
 .banner-area{
     height: 80vh;
     width: 100%;
@@ -101,7 +102,7 @@
     font-weight: 900 !important;
     font-family: 'Roboto', sans-serif !important;
 }
-/* main area */
+/* *main area */
 #main {
     display: flex;
     align-items: center;
@@ -149,15 +150,15 @@
 }
 
 #main .courses .card:hover{
-  border: #F27137 1px solid;
+    border: #F27137 1px solid;
 }
 
-/* categories section */
+/* *categories section */
 
 #categories{
     position: relative !important;
 }
- 
+    
 #categories .item{
     height: 100px;
     width: 200px;
@@ -233,7 +234,7 @@
     font-size: 16px;
 }
 
-/* for the details-component */
+/* *for the details-component */
 
 .play-contain{
     padding-left: 2%;
@@ -668,4 +669,91 @@ footer .bottom-details .bottom_text{
      footer .content .link-boxes .input-box{
     width: 100%;
     }
+}
+/* * About us */
+.aboutus{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.aboutbanner{
+    background-color: #444444;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(./images/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about-row .about-content{
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.about-banner{
+    position: relative !important;
+    width: 100%;
+    padding-right: 55px !important;
+    padding-left: 55px !important;
+    padding-top: 70px;
+    font-family: 'Kurale', serif !important;
+}
+.contact-btn{
+    background-color: #F27137;
+    height: 40px;
+    width: 120px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+}
+.section-bg{
+    background-color: #f8f9fa;
+}
+section{
+    display: block;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.about-container{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 55px;
+    padding-left: 55px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about .about-content h3{
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 24px;
+    color: #F27137;
+    font-family: 'Kurale', serif !important;
+}
+.about-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.personal-img{
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    filter: grayscale(100);
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    border-radius: 6px;
+}
+.personal-img:hover {
+    filter: none;
+}
+.personal-img img {
+    transition: 1s ease-in-out;
+}
+.personal-img img:hover {
+    scale: 1.07;
 }

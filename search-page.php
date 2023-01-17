@@ -9,7 +9,8 @@ if(isset($_POST['search-item'])){
     $result = mysqli_query($connect,$sql);
 }
 ?>
-<h1 class="d-flex align-item-center justify-content-center my-5">Get a Free Online Course</h1>
+<h1 class="d-flex align-item-center justify-content-center my-5">Get a Free Online C<span><img
+            src="../images/nkap-removebg-preview.png" alt="" width="100%" height="40px"></span>urse</h1>
 <div id="box" class="container">
     <form action="search-page.php" method="post">
         &nbsp &nbsp
