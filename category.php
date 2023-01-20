@@ -23,7 +23,7 @@ $result= mysqli_query($connect,$sql);
                     $image = $row['course_image'];
                     $video = $row['course_video'];
                     if($_SESSION['name'] == 'Mathurin Wansi'){
-                        echo '<div class="col-lg-3">
+                        echo '<div class="col-lg-3 mx-3">
                         <div class="card" style="width: 18rem;">
                           <video poster="/admin/images/'.$image.'" height="190px" controls class="card-img-top">
                             <source src="/admin/videos/'.$video.'" type="video/mp4">
@@ -40,15 +40,17 @@ $result= mysqli_query($connect,$sql);
                         </div>
                     </div>';
                     }else{
-                        echo '<div class="col-lg-3">
+                        echo '<div class="col-lg-3 mx-3">
                         <div class="card" style="width: 18rem;">
                           <video poster="/admin/images/'.$image.'" height="190px" controls class="card-img-top">
                             <source src="/admin/videos/'.$video.'" type="video/mp4">
                           </video>
                             <div class="card-body">
-                                <div class="row">
+                                
                                     <h5 class="card-title text-center color">'.$courseTitle.'</h5>
+                                    <div class="d-flex align-item-center justify-content-between" name="id">
                                     <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="details.php?id=' . $id . '"> <i class="fa-solid fa-download text-success"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -77,9 +77,11 @@ if(isset($_POST['search-item'])){
                         <source src="/admin/videos/'.$video.'" type="video/mp4">
                       </video>
                         <div class="card-body">
-                            <div class="row">
+                            
                                 <h5 class="card-title text-center color">'.$courseTitle.'</h5>
+                                <div class="d-flex align-item-center justify-content-between" name="id">
                                 <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
+                                <a href="details.php?id=' . $id . '"> <i class="fa-solid fa-download text-success"></i></a>
                             </div>
                         </div>
                     </div>

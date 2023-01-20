@@ -666,7 +666,7 @@ footer .bottom-details .bottom_text{
     /* background: red; */
     width: calc(100% / 2 - 10px);
     }
-     footer .content .link-boxes .input-box{
+    footer .content .link-boxes .input-box{
     width: 100%;
     }
 }
@@ -687,6 +687,7 @@ footer .bottom-details .bottom_text{
     background-size: cover;
 }
 .about-row .about-content{
+    display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
@@ -756,4 +757,265 @@ section{
 }
 .personal-img img:hover {
     scale: 1.07;
+}
+.about-p{
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+.about .about-content ul{
+    list-style: none;
+    padding: 0;
+}
+.about .about-content ul li{
+    padding: 10px 0 0 8px;
+    position: relative;
+}
+.about .about-content ul i{
+    left: 0;
+    top: 7px;
+    position: absolute;
+    font-size: 25px;
+}
+.section-title{
+    padding-bottom: 40px;
+}
+.section-title h2{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+.section-title h2::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    margin: 4px 10px;
+    background-color: #F27137;
+}
+.section-title p{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    color: #F27137;
+    font-family: "Poppins", sans-serif;
+}
+.team .member{
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(85, 98, 112, 0.08);
+    padding: 30px;
+    border-radius: 4px;
+    background-color: white;
+}
+.align-items-start{
+    align-items: flex-start !important;
+}
+.d-flex{
+    display: flex !important;
+}
+.team .member .pic{
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
+    border-radius: 4px;
+}
+.team .member .pic img{
+    transition: ease-in-out 0.3s;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.team .member:hover img{
+    transform: scale(1.1);
+}
+.team .member .member-info{
+    padding-left: 30px;
+}
+.team .member h4{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #F27137;
+}
+.team .member span{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+.team .member span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #dee2e6;
+    bottom: 0;
+    left: 0;
+}
+.team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+.team .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.team .member .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    background: #8795a4;
+}
+.team .member .social a i {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+.team .member .social{
+    display: flex;
+}
+.team .member .social a{
+    height: 40px;
+    width: 40px;
+    background: red;
+    margin: 0px 5px;
+    border-radius: 20%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.member .social a:nth-child(1){
+    background: #1DA1F2;
+}
+.member .social a:nth-child(1):hover{
+    color: #1DA1F2;
+    background: #fff;
+}
+.member .social a:nth-child(2){
+    background: #E1306C;
+}
+.member .social a:nth-child(2):hover{
+    color: #E1306C;
+    background: #fff;
+}
+.member .social a:nth-child(3){
+    background: #0077B5;
+}
+.member .social a:nth-child(3):hover{
+    color: #0077B5;
+    background: #fff;
+}
+.member .social a:nth-child(4){
+    background: #FF0000;
+}
+.member .social a:nth-child(4):hover{
+    color: #FF0000;
+    background: #fff;
+}
+.testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 40px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    background: #fff;
+}
+.mt-4{
+    margin-top: 1.5rem !important;
+}
+.testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    border-radius: 100px;
+    border: 6px solid #fff;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #111;
+}
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+.testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+.testimonials .testimonial-item .fa-quote-left, .testimonials .testimonial-item .fa-quote-right {
+    color: #f8d1d3;
+    font-size: 26px;
+}
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.progress{
+    display: flex;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+}
+.skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #212529;
+}
+.skills .progress-bar-wrap {
+    background: #edeff1;
+}
+.skills .progress-bar {
+    height: 10px;
+    transition: 0.9s;
+    background-color: #6b7b8d;
+}
+.progress-bar {
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}
+.progress, .progress-bar {
+    display: flex;
+    overflow: hidden;
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+@media (min-width: 992px) {
+.about-team{
+    flex: 0 0 50%;
+    max-width: 50%;
+}    
 }

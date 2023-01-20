@@ -20,6 +20,7 @@ $result = mysqli_query($connect, $sql);
                 if ($_SESSION['name'] == 'Mathurin Wansi') {
                     $trash = '<i class="fa-solid fa-trash-can"></i>';
                     $eye = '<i class="fa-solid fa-eye"></i>';
+                    $download ='<i class="fa-solid fa-download"></i>'; 
                      echo '<div class="col-lg-3 d-flex justify-content-space-between">
                 <div class="card" style="width: 18rem;">
                   <video poster="/admin/images/' . $image . '" height="173px"  controls class="card-img-top">
@@ -43,9 +44,11 @@ $result = mysqli_query($connect, $sql);
                     <source src="/admin/videos/' . $video . '" type="video/mp4">
                   </video>
                     <div class="card-body">
-                    <div class="row">
+                    
                         <h5 class="card-title text-center">' . $courseTitle . '</h5>
+                        <div class="d-flex align-item-center justify-content-between" name="id">
                         <a href="details.php?id=' . $id . '"> <i class="fa-solid fa-eye"></i></a>
+                        <a href="details.php?id=' . $id . '"> <i class="fa-solid fa-download text-success"></i></a>
                          </div>
                     </div>
                 </div>
