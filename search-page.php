@@ -30,10 +30,10 @@ if(isset($_POST['search-item'])){
             <img src="./images/couse2.jpg" alt="" width="100%">
         </div>
         <div class="grid-item item-3">
-            <img src="./images/couser3.jpg" alt="" width="100%">
+            <img src="./images/couse23.jpg" alt="" width="100%">
         </div>
         <div class="grid-item item-4">
-            <img src="./images/couse4.jpg" alt="" width="100%">
+            <img src="./images/couse24.jpg" alt="" width="100%">
         </div>
         <div class="grid-item item-5">
             <img src="./admin/images/courseImg634fdd1eab2215.44602377.jpg" alt="" width="100%">
@@ -53,6 +53,7 @@ if(isset($_POST['search-item'])){
                 $courseTitle = $row['course_title'];
                 $image = $row['course_image'];
                 $video = $row['course_video'];
+                $pdf = $row['pdf'];
                 if($_SESSION['name'] == 'Mathurin Wansi'){
                     echo '<div class="col-lg-3 my-3 mx-4">
                     <div class="card d-flex align-items-center justify-content-center" style="width: 18rem;">
@@ -62,6 +63,7 @@ if(isset($_POST['search-item'])){
                         <div class="card-body">
                             <div class="row">
                                 <h5 class="card-title text-center color">'.$courseTitle.'</h5>
+                                <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
                                 <div class="d-flex align-items-center justify-content-between">
                                 <a class="text-danger" href="delete.php?id='.$id.'"><i class="fa-solid fa-trash-can"></i></a>
                                 <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
@@ -79,9 +81,10 @@ if(isset($_POST['search-item'])){
                         <div class="card-body">
                             
                                 <h5 class="card-title text-center color">'.$courseTitle.'</h5>
+                                <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
                                 <div class="d-flex align-item-center justify-content-between" name="id">
                                 <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
-                                <a href="details.php?id=' . $id . '"> <i class="fa-solid fa-download text-success"></i></a>
+                                <a href="download.php?downloaditem='. $video. '"> <i class="fa-solid fa-download text-success"></i></a>
                             </div>
                         </div>
                     </div>
