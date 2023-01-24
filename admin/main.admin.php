@@ -813,6 +813,7 @@
                     <!-- TABLE: LATEST ORDERS -->
                     <?php  
                   include "addCourse.php";
+                  include "addAssignment.php";
                 ?>
                     <!-- <div class="card">
                                 <div class="card-header border-transparent">

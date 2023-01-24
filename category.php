@@ -22,6 +22,7 @@ $result= mysqli_query($connect,$sql);
                     $courseTitle = $row['course_title'];
                     $image = $row['course_image'];
                     $video = $row['course_video'];
+                    $pdf = $row['pdf'];
                     if($_SESSION['name'] == 'Mathurin Wansi'){
                         echo '<div class="col-lg-3 mx-3">
                         <div class="card" style="width: 18rem;">
@@ -31,6 +32,7 @@ $result= mysqli_query($connect,$sql);
                             <div class="card-body">
                                 <div class="row">
                                     <h5 class="card-title text-center color">'.$courseTitle.'</h5>
+                                    <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
                                     <div class="d-flex align-items-center justify-content-between">
                                     <a class="text-danger" href="delete.php?id='.$id.'"><i class="fa-solid fa-trash-can"></i></a>
                                     <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
@@ -48,9 +50,10 @@ $result= mysqli_query($connect,$sql);
                             <div class="card-body">
                                 
                                     <h5 class="card-title text-center color">'.$courseTitle.'</h5>
+                                    <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
                                     <div class="d-flex align-item-center justify-content-between" name="id">
                                     <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
-                                    <a href="details.php?id=' . $id . '"> <i class="fa-solid fa-download text-success"></i></a>
+                                    <a href="download.php?downloaditem='. $video. '"> <i class="fa-solid fa-download text-success"></i></a>
                                 </div>
                             </div>
                         </div>

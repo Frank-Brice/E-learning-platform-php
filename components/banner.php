@@ -4,7 +4,7 @@
             <div class="col-lg-6 text-light ">
                 <h1 class="fw-bold">Start learning from the world's best institutions</h1>
                 <p>Build skills with courses, certificates and degrees.Online from world class universities</p>
-                <button class="btn btn-lg btn-dark rounded-pill"> Get Started</button>
+                <button class="btn btn-lg btn-dark rounded-pill"> Here we are!</button>
             </div>
             <div class="col-lg-6">
                 <img src="/images/bann1.png" alt="">

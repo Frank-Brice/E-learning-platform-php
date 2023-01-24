@@ -3,8 +3,6 @@ session_start();
 require("./db_connection.php");
 
 
-$id = $_GET['deleteitem'];
-
 // sql to delete a course
 $sql = "DELETE FROM courses WHERE id = $id";
 

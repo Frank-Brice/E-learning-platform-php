@@ -31,20 +31,24 @@
                 </a>
             </div>
             <ul class="mainNavs">
-                <a href="home.php">
+                <a class="" href="home.php">
                     <li>Home</li>
                 </a>
-                <a href="about-us.php">
+                <a class="" href="about-us.php">
                     <li>About Us</li>
                 </a>
-                <a href="courses.php">
+                <a class="" href="courses.php">
                     <li>Courses</li>
                 </a>
+
                 <?php
                 if ($_SESSION['name'] == 'Mathurin Wansi') {
-                    echo '<a href="/admin/admin.php" class="btn btn-dark btn-sm rounded-pill"><li>Dashboard</li></a>';
+                    echo '<a class="" href="program-detail.php">
+                    <li>Programs</li>
+                </a>';
+                    echo '<a href="/admin/admin.php" class="btn btn-dark btn-sm rounded-pill mx-2" style="margin-left: 18px;"><li>Dashboard</li></a>';
                 } else {
-                    echo '<a href=""><li>Programs</li></a>';
+                    echo '<a href="program-detail.php"><li>Programs</li></a>';
                 }
                 ?>
             </ul>
@@ -80,9 +84,12 @@
                             </a>
                             <?php
                             if ($_SESSION['name'] == 'Mathurin Wansi') {
+                                echo '<a class="" href="program-detail.php">
+                    <li>Programs</li>
+                </a>';
                                 echo '<a href="/admin/main.admin.php" class="btn btn-sm rounded-pill bg-dark"><li>Dashboard</li></a>';
                             } else {
-                                echo '<a href=""><li>Programs</li></a>';
+                                echo '<a href="program-detail.php"><li>Programs</li></a>';
                             }
                             ?>
                         </ul>
