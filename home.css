@@ -1013,6 +1013,50 @@ section{
     font-style: normal;
 }
 
+
+/* *Assignment Area */
+
+.aboutus{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.aboutassignment{
+    background-color: #444444;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(./images/assignmentbanner2.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.aboutsubmission{
+    background-color: #444444;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(./images/Submission1.png);
+    background-position: center;
+    background-size: contain;
+}
+.about-row .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.about-banner{
+    position: relative !important;
+    width: 100%;
+    padding-right: 55px !important;
+    padding-left: 55px !important;
+    padding-top: 70px;
+    font-family: 'Kurale', serif !important;
+}
+
+
+
 @media (min-width: 992px) {
 .about-team{
     flex: 0 0 50%;

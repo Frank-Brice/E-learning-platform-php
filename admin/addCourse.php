@@ -2,26 +2,27 @@
                 <h3 class="text-center text-success">Add a course</h3>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Course title</label>
-                    <input type="text" name="title" class="form-control mb-3" id="title" placeholder="Course title">
+                    <input type="text" name="title" class="form-control mb-3" id="title" placeholder="Course title"
+                        required>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1 " class="form-label">Course Description</label>
                         <textarea class="form-control" id="description" name="description"
-                            placeholder="Course Description" rows="4"></textarea>
+                            placeholder="Course Description" rows="4" required></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Course Requirements</label>
                         <textarea class="form-control " name="requirements" placeholder="Requirements.."
-                            id="description" rows="3"></textarea>
+                            id="description" rows="3" required></textarea>
                     </div>
                     <label for="exampleFormControlInput1" class="form-label">Course Image</label>
                     <input class="form-control  mb-3" type="file" name="image" id="formFileMultiple" multiple
-                        accept="image/*">
+                        accept="image/*" required>
                     <label for="exampleFormControlInput1" class="form-label">Course Video</label>
                     <input class="form-control  mb-3" name="courseVideo" type="file" id="formFileMultiple" multiple
-                        accept="video/*">
+                        accept="video/*" required>
                     <label for="exampleFormControlInput1" class="form-label">Course PDF</label>
                     <input class="form-control  mb-3" name="coursePdf" type="file" id="formFileMultiple" multiple
-                        accept="document/*">
+                        accept="document/*" required>
                     <label for="exampleFormControlInput1" class="form-label">Course Price</label>
                     <input class="form-control  mb-3" name="price" placeholder="Course price" type="text" required>
                 </div>

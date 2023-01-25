@@ -1,9 +1,9 @@
 <?php
 session_start();
+if ($_SESSION['name']) {
 include "./components/navbar.php";
-?>
 
-<body class="aboutus">
+echo '<body class="aboutus">
     <div class="aboutbanner">
         <div class="row about-row">
             <div class="col-lg-6 about-banner ml-5 my-5">
@@ -30,7 +30,7 @@ include "./components/navbar.php";
                             Frank</b>
                         here, <b>CEO</b>
                         of <b>Nkap-Learning.</b>
-                        <br><br> I'm a Software Engineering student involved in <b>a variety of
+                        <br><br> Am a Software Engineering student involved in <b>a variety of
                             projects</b>. Like any project, it has it
                         ups and
                         downs, which can be stressful, but I learn
@@ -210,7 +210,16 @@ include "./components/navbar.php";
             </div>
         </div>
     </section>
-</body>
-<?php
+</body>';
+
 include "./components/footer.php";
+}else {
+    # code..
+    header('location:index.php?error=Please login first');
+}
+?>
+
+
+<?php
+
 ?>

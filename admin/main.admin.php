@@ -28,7 +28,8 @@
         </div>
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-dark" style="background-color: #cb6c17;">
+        <nav class="main-header navbar navbar-expand navbar-dark" style="background-color:  #000;">
+            <!-- style="background-color:  #F27137;" in the main-header class -->
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -172,6 +173,7 @@
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!--  style="background-color:  #F27137;" in the main-sidebar class -->
             <!-- Brand Logo -->
             <a href="index3.html" class="brand-link">
                 <img src="../images/e-book.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
@@ -180,7 +182,9 @@
             </a>
 
             <!-- Sidebar -->
-            <div class="sidebar bg-dark">
+            <div class="sidebar">
+                <!--  style="background-color:  #F27137;" in the sidebar class -->
+
                 <!-- Sidebar user panel (optional) -->
                 <div class=" user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
@@ -232,6 +236,7 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <div class="content-header">
+                <!-- style="background-color:  #F27137;" in the content header class -->
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
@@ -328,6 +333,54 @@
                                 <div class="info-box-content">
                                     <span class="info-box-text">Category</span>
                                     <span class="info-box-number">6</span>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="info-box mb-3">
+                                <span class="info-box-icon bg-white elevation-1"><img
+                                        src="../admin/images/admin-category.png" alt=""></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Assignment</span>
+                                    <?php
+                                       $sql = "SELECT * FROM assignments";
+                                       $result = mysqli_query($connect, $sql);
+                                       
+                                       if ($assignment_total = mysqli_num_rows($result)) {
+                                        echo '<h4> '.$assignment_total.' </h4>';
+                                       } else {
+                                        echo '<h4> No assignment </h4>';
+                                       }
+                                       
+                                     ?>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-12 col-sm-6 col-md-3 d-flex align-item-center justify-content-center">
+                            <div class="info-box mb-3">
+                                <span class="info-box-icon bg-white elevation-1"><img
+                                        src="../admin/images/admin-category.png" alt=""></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Student's Assignment</span>
+                                    <?php
+                                       $sql = "SELECT * FROM studentassignment";
+                                       $result = mysqli_query($connect, $sql);
+                                       
+                                       if ($studAssignment_total = mysqli_num_rows($result)) {
+                                        echo '<h4> '.$studAssignment_total.' </h4>';
+                                       } else {
+                                        echo '<h4> No assignment </h4>';
+                                       }
+                                       
+                                     ?>
                                 </div>
                                 <!-- /.info-box-content -->
                             </div>

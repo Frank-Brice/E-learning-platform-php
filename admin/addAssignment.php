@@ -4,10 +4,10 @@
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Assignment title</label>
                     <input type="text" name="assignment_title" class="form-control mb-3" id="title"
-                        placeholder="Course title">
+                        placeholder="Course title" required>
                     <label for="exampleFormControlInput1" class="form-label">Assignment PDF</label>
                     <input class="form-control  mb-3" name="assignment_pdf" type="file" id="formFileMultiple" multiple
-                        accept="document/*">
+                        accept="document/*" required>
                 </div>
                 <select class="form-select form-control mb-3" name="assignment_category"
                     aria-label="Default select example">
