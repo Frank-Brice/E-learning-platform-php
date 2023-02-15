@@ -19,7 +19,7 @@ if (isset($_POST['assignment_title'])  && isset($_POST['assignment_category']) &
           $fileDestination = '../assignment/'.$pdf;
           move_uploaded_file($_FILES['assignment_pdf']['tmp_name'],$fileDestination);
 
-          header("location:/admin/admin.php");
+          header("location:/admin/admin.php?success=Assignment set successfully");
     }else{
       echo "no assignment added ";
     }

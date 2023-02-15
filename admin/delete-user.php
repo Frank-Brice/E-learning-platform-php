@@ -1,6 +1,6 @@
 <?php  
 session_start();
-require("./db_connection.php");
+require("../db_connection.php");
 
 $id = $_GET['deleteitem'];
 // sql to delete a user

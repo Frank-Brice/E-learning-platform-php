@@ -825,11 +825,11 @@
                             <!-- USERS LIST -->
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Latest Members</h3>
+                                    <h3 class="card-title">Student Registered</h3>
 
                                     <div class="card-tools">
                                         <span class="badge badge-danger"><?php
-                                       $sql = "SELECT * FROM users";
+                                       $sql = "SELECT * FROM users WHERE id > 8";
                                        $result = mysqli_query($connect, $sql);
                                        
                                        if ($users_total = mysqli_num_rows($result)) {
@@ -838,7 +838,34 @@
                                         echo '<h6> No user </h6>';
                                        }
                                        
-                                     ?> New Members</span>
+                                     ?> New Students</span>
+
+                                        <!-- <span class="nav-item">
+                                            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                                                <i class="fas fa-search"></i>
+                                            </a>
+                                            <div class="navbar-search-block">
+                                                <form class="form-inline">
+                                                    <div class="input-group input-group-sm">
+                                                        <input class="form-control form-control-navbar" type="search"
+                                                            placeholder="Search" aria-label="Search">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-navbar" type="submit">
+                                                                <i class="fas fa-search"></i>
+                                                            </button>
+                                                            <button class="btn btn-navbar" type="button"
+                                                                data-widget="navbar-search">
+                                                                <i class="fas fa-times"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </span> -->
+
+                                        <button class="btn btn-navbar" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                             <i class="fas fa-minus"></i>
                                         </button>
@@ -853,7 +880,7 @@
                                 <?php include "./user.admin.php"; ?>
                                 <!-- /.card-body -->
                                 <div class="card-footer text-center">
-                                    <a href="javascript:">View All Users</a>
+                                    <a href="javascript:">View All Students</a>
                                 </div>
                                 <!-- /.card-footer -->
                             </div>

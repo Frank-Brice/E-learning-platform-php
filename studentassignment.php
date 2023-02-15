@@ -17,6 +17,7 @@ $result = mysqli_query($connect, $sql);
             while ($row = mysqli_fetch_assoc($result)) {
                 $name = $row['names'];
                 $email = $row['email'];
+                $date = $row['date'];
                 $pdf = $row['assignment_pdf'];
                 $id = $row['id'];
                 if ($_SESSION['name'] == 'Mathurin Wansi') {
@@ -26,11 +27,11 @@ $result = mysqli_query($connect, $sql);
                     echo '<div class="col-lg-3 d-flex justify-content-space-between">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title text-center text-success">' . $name . '</h5>
+                        <h5 class="card-title text-center text-danger">' . $date . '</h5>
                         <h5 class="card-title text-center text-danger">' . $email . '</h5>
                         <iframe src="/admin/studentAssignment/' . $pdf . '" width="100%"></iframe>
                         <div class="d-flex align-item-center justify-content-between" name="id">
-                            <a href="delete-studassignment.php?deleteitem='. $id. '"> <i class="fa-solid fa-trash-can text-danger"></i></a>
+                            <a href="delete-studassignment.php?deleteitem='. $id. '" onclick="return checkdelete()"> <i class="fa-solid fa-trash-can text-danger"></i></a>
                             
                         </div>
                     </div>
@@ -49,3 +50,8 @@ $result = mysqli_query($connect, $sql);
 
     </div>
 </div>
+<script>
+function checkdelete() {
+    return confirm('Are you sure you want to Delete this Students Assignment ?');
+}
+</script>

@@ -73,10 +73,10 @@
                     </div>
                     <div class="offcanvas-body text-center">
                         <ul>
-                            <a href="" class="text-primary">
+                            <a href="home.php" class="text-primary">
                                 <li>Home</li>
                             </a>
-                            <a href="">
+                            <a href="about-us.php">
                                 <li>AboutUs</li>
                             </a>
                             <a href="/courses.php">
@@ -87,7 +87,7 @@
                                 echo '<a class="" href="program-detail.php">
                     <li>Programs</li>
                 </a>';
-                                echo '<a href="/admin/main.admin.php" class="btn btn-sm rounded-pill bg-dark"><li>Dashboard</li></a>';
+                                echo '<a href="/admin/main.admin.php" class="btn btn-sm rounded-pill bg-dark text-white"><li>Dashboard</li></a>';
                             } else {
                                 echo '<a href="program-detail.php"><li>Programs</li></a>';
                             }

@@ -34,7 +34,7 @@ $result= mysqli_query($connect,$sql);
                                     <h5 class="card-title text-center color">'.$courseTitle.'</h5>
                                     <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
                                     <div class="d-flex align-items-center justify-content-between">
-                                    <a class="text-danger" href="delete.php?id='.$id.'"><i class="fa-solid fa-trash-can"></i></a>
+                                    <a class="text-danger" href="delete.php?id='.$id.'"  onclick="return checkdelete()"><i class="fa-solid fa-trash-can"></i></a>
                                     <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
                                     </div>
                                 </div>
@@ -74,4 +74,9 @@ $result= mysqli_query($connect,$sql);
 
     </div>
 </div>
+<script>
+function checkdelete() {
+    return confirm('Are you sure you want to Delete this Course ?');
+}
+</script>
 <?php include "./components/footer.php"; ?>

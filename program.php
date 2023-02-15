@@ -26,7 +26,7 @@ $result = mysqli_query($connect, $sql);
                         <h5 class="card-title text-center text-success">' . $assignmentTitle . '</h5>
                         <iframe src="/admin/assignment/' . $pdf . '" width="100%"></iframe>
                         <div class="d-flex align-item-center justify-content-between" name="id">
-                            <a href="delete-assignment.php?deleteitem='. $id. '"> <i class="fa-solid fa-trash-can text-danger"></i></a>
+                            <a href="delete-assignment.php?deleteitem='. $id. '" onclick="return checkdelete()"> <i class="fa-solid fa-trash-can text-danger"></i></a>
                             
                             
                         </div>
@@ -57,3 +57,8 @@ $result = mysqli_query($connect, $sql);
 
     </div>
 </div>
+<script>
+function checkdelete() {
+    return confirm('Are you sure you want to Delete this Assignment ?');
+}
+</script>

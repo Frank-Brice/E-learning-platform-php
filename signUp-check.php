@@ -35,7 +35,7 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])
             $_SESSION['name'] = $names;
             $_SESSION['file'] = $file;
             $_SESSION['email'] = $email;
-          header("location:home.php?success=Account created successfully");
+          header("location:index.php?success=Account created successfully");
           exit();
        }else{
          echo 'something went wrong';

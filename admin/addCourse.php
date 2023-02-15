@@ -1,3 +1,9 @@
+            <?php if (isset($_GET['success'])) {
+            $success = $_GET['success'];
+            echo '<script>
+alert("Course set successfully")
+            </script>';
+           }?>
             <form method="POST" action="./controller/createCourse.php" class="card p-4" enctype="multipart/form-data">
                 <h3 class="text-center text-success">Add a course</h3>
                 <div class="mb-3">

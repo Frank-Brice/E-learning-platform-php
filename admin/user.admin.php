@@ -38,7 +38,7 @@ $result1 = mysqli_query($connect, $sql1);
             <img src="../users/'.$image.'" alt="User Image">
             <a class="users-list-name" href="#">'.$name.'</a>
             <span class="users-list-date">'.$email.'</span>
-            <a href="delete-user.php?deleteitem='. $id. '"> <i class="fa-solid fa-trash-can text-danger"></i></a>
+            <a href="delete-user.php?deleteitem='. $id. '" onclick="return checkdelete()"> <i class="fa-solid fa-trash-can text-danger"></i></a>
         </li>';
   }
 } 
@@ -49,6 +49,11 @@ $result1 = mysqli_query($connect, $sql1);
     </ul>
     <!-- /.users-list -->
 </div>
+<script>
+function checkdelete() {
+    return confirm('Are you sure you want to Delete this Student ?');
+}
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -39,7 +39,7 @@ if (isset($_POST['title']) && isset($_POST['description']) && isset($_POST['requ
           $fileDestination = '../pdf/'.$pdf;
           move_uploaded_file($_FILES['coursePdf']['tmp_name'],$fileDestination);
 
-          header("location:/admin/admin.php");
+          header("location:/admin/admin.php?success=Course set successfully");
     }else{
       echo "no course added ";
     }
