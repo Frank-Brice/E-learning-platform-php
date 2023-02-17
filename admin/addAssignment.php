@@ -1,5 +1,5 @@
-           <?php if (isset($_GET['success'])) {
-            $success = $_GET['success'];
+           <?php if (isset($_GET['assignment'])) {
+            $success = $_GET['assignment'];
             echo '<script>
 alert("Assignment set successfully")
             </script>';
@@ -10,7 +10,7 @@ alert("Assignment set successfully")
                <div class="mb-3">
                    <label for="exampleFormControlInput1" class="form-label">Assignment title</label>
                    <input type="text" name="assignment_title" class="form-control mb-3" id="title"
-                       placeholder="Course title" required>
+                       placeholder="Assignment title" required>
                    <label for="exampleFormControlInput1" class="form-label">Assignment PDF</label>
                    <input class="form-control  mb-3" name="assignment_pdf" type="file" id="formFileMultiple" multiple
                        accept="document/*" required>

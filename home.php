@@ -1,5 +1,9 @@
 <?php 
 session_start();
+
+if(isset($_SESSION['role'])){
+   header('location: instructhome.php');
+}
    if ($_SESSION['name']) {
     include('components/navbar.php');
     include('components/banner.php');

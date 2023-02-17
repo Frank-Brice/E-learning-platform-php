@@ -3,6 +3,9 @@ session_start();
 if(isset($_SESSION['name'])){
    header('location: home.php');
 }
+if(isset($_SESSION['role'])){
+   header('location: instructhome.php');
+}
 ?>
 
 <!doctype html>
@@ -38,7 +41,7 @@ if(isset($_SESSION['name'])){
                ?>
                     <div class="row">
                         <div class="col-lg-6">
-                            <form class="form-group center-el h-100" method="POST" action="login.php">
+                            <form class="form-group center-el h-100" method="POST" action="instructlogin.php">
                                 <h3><img src="images/e-book.png" alt="logo" width="40px"></h3>
                                 <p>Welcome To Nkap-Learning <span><img src="../images/nkap-removebg-preview.png" alt=""
                                             width="15%" height="50px"></span></p>
@@ -55,14 +58,15 @@ if(isset($_SESSION['name'])){
                                         value="SignIn" name="submit">
                                     <span>Don't have an account ?<a href="signUp.php" class="text-italic color">
                                             SignUp</a></span><br><br>
-                                    <a href="instructindex.php" class="text-italic color text-center">
-                                        instructor ?</a><br>
+                                    <a href="index.php" class="text-italic color text-center">
+                                        return ?</a><br>
                                 </div>
                             </form>
 
                         </div>
                         <div class="col-lg-6">
-                            <img src="images/auth4.jpg" alt="" class="card-img" width="100%">
+                            <!-- <img src="images/auth4.jpg" alt="" class="card-img" width="100%"> -->
+                            <h1 class="text-center"><b>Instructor</b></h1>
                         </div>
                     </div>
                 </div>

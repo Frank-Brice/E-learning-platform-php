@@ -1,9 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['role'])){
-   header('location: instructhome.php');
-}
-include('components/navbar.php');
+include('components/instructnavbar.php');
 
 include "db_connection.php";
 if(isset($_POST['search-item'])){

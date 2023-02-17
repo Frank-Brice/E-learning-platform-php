@@ -1023,8 +1023,8 @@ section{
     text-align: left;
 }
 .aboutassignment{
-    background-color: #444444;
-    height: 200px;
+    background-color: #F27137;
+    height: 290px;
     width: 100%;
     overflow: hidden;
     background-image: url(./images/assignmentbanner2.jpg);
@@ -1032,13 +1032,35 @@ section{
     background-size: contain;
 }
 .aboutsubmission{
-    background-color: #444444;
-    height: 200px;
+    background-color: #F27137;
+    height: 295px;
     width: 100%;
     overflow: hidden;
     background-image: url(./images/Submission1.png);
+    background-position: bottom 10%;
+    /* background-attachment: fixed; */
+    /* background-position: top 75%; */
+    background-size: cover;
+}
+.aboutsolution{
+    background-color: #fff;
+    height: 315px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(./images/assignmentsolution3.png);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+.aboutquiz{
+    background-color: #fff;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(./images/quiz2.png);
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .about-row .about-content{
     display: flex;

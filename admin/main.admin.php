@@ -287,7 +287,7 @@
                                        if ($users_total = mysqli_num_rows($result)) {
                                         echo '<h4> '.$users_total.' </h4>';
                                        } else {
-                                        echo '<h4> No user </h4>';
+                                        echo '<h4 class="text-danger"> No user </h4>';
                                        }
                                        
                                      ?>
@@ -315,7 +315,7 @@
                                        if ($course_total = mysqli_num_rows($result)) {
                                         echo '<h4> '.$course_total.' </h4>';
                                        } else {
-                                        echo '<h4> No course </h4>';
+                                        echo '<h4 class="text-danger"> No course </h4>';
                                        }
                                        
                                      ?>
@@ -342,7 +342,7 @@
                         <div class="col-12 col-sm-6 col-md-3">
                             <div class="info-box mb-3">
                                 <span class="info-box-icon bg-white elevation-1"><img
-                                        src="../admin/images/admin-category.png" alt=""></span>
+                                        src="../admin/images/admin-assignment.jpg" alt=""></span>
 
                                 <div class="info-box-content">
                                     <span class="info-box-text">Assignment</span>
@@ -353,7 +353,31 @@
                                        if ($assignment_total = mysqli_num_rows($result)) {
                                         echo '<h4> '.$assignment_total.' </h4>';
                                        } else {
-                                        echo '<h4> No assignment </h4>';
+                                        echo '<h4 class="text-danger"> No assignment </h4>';
+                                       }
+                                       
+                                     ?>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-12 col-sm-6 col-md-3 d-flex align-item-center justify-content-center">
+                            <div class="info-box mb-3">
+                                <span class="info-box-icon bg-white elevation-1"><img src="../admin/images/admin-sa.png"
+                                        alt=""></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Student's Assignment</span>
+                                    <?php
+                                       $sql = "SELECT * FROM studentassignment";
+                                       $result = mysqli_query($connect, $sql);
+                                       
+                                       if ($studAssignment_total = mysqli_num_rows($result)) {
+                                        echo '<h4> '.$studAssignment_total.' </h4>';
+                                       } else {
+                                        echo '<h4 class="text-danger"> No submission </h4>';
                                        }
                                        
                                      ?>
@@ -366,21 +390,35 @@
                         <div class="col-12 col-sm-6 col-md-3 d-flex align-item-center justify-content-center">
                             <div class="info-box mb-3">
                                 <span class="info-box-icon bg-white elevation-1"><img
-                                        src="../admin/images/admin-category.png" alt=""></span>
+                                        src="../admin/images/admin-solution.png" alt=""></span>
 
                                 <div class="info-box-content">
-                                    <span class="info-box-text">Student's Assignment</span>
+                                    <span class="info-box-text">Solution</span>
                                     <?php
-                                       $sql = "SELECT * FROM studentassignment";
+                                       $sql = "SELECT * FROM solution";
                                        $result = mysqli_query($connect, $sql);
                                        
-                                       if ($studAssignment_total = mysqli_num_rows($result)) {
-                                        echo '<h4> '.$studAssignment_total.' </h4>';
+                                       if ($solution_total = mysqli_num_rows($result)) {
+                                        echo '<h4> '.$solution_total.' </h4>';
                                        } else {
-                                        echo '<h4> No assignment </h4>';
+                                        echo '<h4 class="text-danger"> No solution </h4>';
                                        }
                                        
                                      ?>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-12 col-sm-6 col-md-3 d-flex align-item-center justify-content-center">
+                            <div class="info-box mb-3">
+                                <span class="info-box-icon bg-white elevation-1"><img
+                                        src="../admin/images/admin-quiz.avif" alt=""></span>
+
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Quiz</span>
+                                    <span class="info-box-number">1</span>
                                 </div>
                                 <!-- /.info-box-content -->
                             </div>
@@ -893,7 +931,9 @@
                     <!-- TABLE: LATEST ORDERS -->
                     <?php  
                   include "addCourse.php";
+                  include "addInstructor.php";
                   include "addAssignment.php";
+                  include "addSolution.php";
                 ?>
                     <!-- <div class="card">
                                 <div class="card-header border-transparent">

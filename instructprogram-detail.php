@@ -1,11 +1,8 @@
 <?php 
     session_start();
-    if(isset($_SESSION['role'])){
-   header('location: instructhome.php');
-}
-    if ($_SESSION['name']) {
+    if ($_SESSION['role']) {
     require("./db_connection.php");
-    include('components/navbar.php');
+    include('components/instructnavbar.php');
     echo '<body class="aboutus">
     <div class="aboutassignment">
         <div class="row about-row">
@@ -39,6 +36,6 @@ include('./solution.php');
 include "./components/footer.php";
     }else {
         # code...
-        header('location:index.php?error=Please login first');
+        header('location:instructindex.php?error=Please login first');
     }
 ?>

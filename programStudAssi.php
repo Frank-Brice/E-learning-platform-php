@@ -1,6 +1,6 @@
  <section>
      <?php 
-        if ($_SESSION['name'] == 'Mathurin Wansi') {
+        if ($_SESSION['name'] == 'Mathurin Wansi' || $_SESSION['role'] == 'instructor') {
             echo '<section><h1 class="text-center text-success"><b>STUDENTS ASSIGNMENT</b></h1></section>';
             include('./studentassignment.php');
         }else {
@@ -27,7 +27,7 @@
                 <label for="exampleFormControlInput1" class="form-label" style="color: #F27137;"><b>Assignment PDF</b></label>
                 <input class="form-control  mb-3" name="assignment_pdf" type="file" id="formFileMultiple" multiple
                     accept="document/*">
-                    <input type="submit" class="form-btn btn btn-lg border px-3 py-2 my-4" style="background-color: #F27137; color: #fff;"
+                    <input type="submit" class="form-btn btn btn-lg border px-3 py-2 my-1" style="background-color: #F27137; color: #fff;"
                                         value="Submit" name="submit">
         </form></section>';
         }

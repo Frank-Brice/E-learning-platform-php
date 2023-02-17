@@ -1,7 +1,8 @@
 <?php
-
+// session_start();
 require("./db_connection.php");
-$sql = "SELECT * FROM assignments";
+// include('components/navbar.php');
+$sql = "SELECT * FROM solution";
 $result = mysqli_query($connect, $sql);
 ?>
 
@@ -10,25 +11,26 @@ $result = mysqli_query($connect, $sql);
     <div class="row courses my-5" id="maincourselist">
         <?php
         if ($result) {
-            if (mysqli_num_rows($result) <= 0 ) {       // code to verify if there is no assignment in the database or not.
-                echo "<h1 class='text-center text-danger'>No Assignment Added Yet!!!</h1>";
+            if (mysqli_num_rows($result) <= 0 ) {       // code to verify if there is no solution in the database or not.
+                echo "<h1 class='text-center text-danger'>No Solution Added Yet!!!</h1>";
             }
             while ($row = mysqli_fetch_assoc($result)) {
-                $assignmentTitle = $row['assignment_title'];
-                $pdf = $row['assignment_pdf'];
+                $name = $row['solution_title'];
+                $date = $row['date'];
+                $pdf = $row['solution_pdf'];
                 $id = $row['id'];
-                if ($_SESSION['name'] == 'Mathurin Wansi' || $_SESSION['role'] == 'instructor') {
+                if ($_SESSION['name'] == 'Mathurin Wansi') {
                     $trash = '<i class="fa-solid fa-trash-can"></i>';
                     $eye = '<i class="fa-solid fa-eye"></i>';
                     $download ='<i class="fa-solid fa-download"></i>'; 
+               
                     echo '<div class="col-lg-3 d-flex justify-content-space-between">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title text-center text-success">' . $assignmentTitle . '</h5>
-                        <iframe src="/admin/assignment/' . $pdf . '" width="100%"></iframe>
+                        <h5 class="card-title text-center text-success">' . $name . '</h5>
+                        <iframe src="/admin/solution/' . $pdf . '" width="100%"></iframe>
                         <div class="d-flex align-item-center justify-content-between" name="id">
-                            <a href="delete-assignment.php?deleteitem='. $id. '" onclick="return checkdelete()"> <i class="fa-solid fa-trash-can text-danger"></i></a>
-                            
+                            <a href="delete-solution.php?deleteitem='. $id. '" onclick="return checksolutiondelete()"> <i class="fa-solid fa-trash-can text-danger"></i></a>
                             
                         </div>
                     </div>
@@ -39,12 +41,8 @@ $result = mysqli_query($connect, $sql);
                     echo '<div class="col-lg-3 d-flex justify-content-space-between">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    
-                        <h5 class="card-title text-center text-danger">' . $assignmentTitle . ' </h5>
-                        <iframe src="/admin/assignment/' . $pdf . '" width="100%"></iframe>
-                        <div class="d-flex align-item-center justify-content-between" name="id">
-                        
-                        </div>
+                        <h5 class="card-title text-center text-success">' . $name . '</h5>
+                        <iframe src="/admin/solution/' . $pdf . '" width="100%"></iframe>
                     </div>
                 </div>
             </div>';
@@ -54,12 +52,12 @@ $result = mysqli_query($connect, $sql);
         } else {
             echo "nothing gotten from the database";
         }
-    ?>
+        ?>
 
     </div>
 </div>
 <script>
-function checkdelete() {
-    return confirm('Are you sure you want to delete this Assignment ?');
+function checksolutiondelete() {
+    return confirm('Are you sure you want to delete this Solution ?');
 }
 </script>
