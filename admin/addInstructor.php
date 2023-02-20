@@ -45,12 +45,13 @@ alert("Instructor added successfully in the system")
      </div>
      <select class="form-select form-control mb-3" name="category" aria-label="Default select example">
          <option selected>Choose a category</option>
-         <option value="Programming">Programming</option>
+         <option value="Programming">Web development</option>
+         <!-- <option value="Programming">Programming</option>
          <option value="Marketing">Marketing</option>
          <option value="Photography">Photography</option>
          <option value="Music">Music</option>
          <option value="Business">Business</option>
-         <option value="Graphics Design">Graphics Design</option>
+         <option value="Graphics Design">Graphics Design</option> -->
 
      </select>
      <button type="submit" class="btn btn-success btn-lg" name="submit">Add instructor</button>

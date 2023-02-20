@@ -15,6 +15,6 @@
     header('location:instructhome.php');
     exit();
    }else{
-    header('location:index.php?error=no user found');
+    header('location:instructindex.php?error=no instructor found');
    }
  }

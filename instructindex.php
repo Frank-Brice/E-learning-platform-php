@@ -48,7 +48,7 @@ if(isset($_SESSION['role'])){
                                 <div class="div my-3">
                                     <label for="email" class="text-capitalize">email</label>
                                     <input type="email" id="email" name="email" class="form-control px-3 py-2 my-2"
-                                        placeholder="enter your email" required>
+                                        placeholder="name@nkap.com" required>
                                     <label for="password" class="text-capitalize">password</label>
                                     <input type="password" id="password" name="password"
                                         class="form-control px-3 py-2 my-2" placeholder="enter your password" required>
@@ -56,8 +56,8 @@ if(isset($_SESSION['role'])){
                                             password ?</a></span><br>
                                     <input type="submit" class="form-btn btn btn-lg border px-3 py-2 my-4"
                                         value="SignIn" name="submit">
-                                    <span>Don't have an account ?<a href="signUp.php" class="text-italic color">
-                                            SignUp</a></span><br><br>
+                                    <!-- <span>Don't have an account ?<a href="signUp.php" class="text-italic color">
+                                            SignUp</a></span><br><br> -->
                                     <a href="index.php" class="text-italic color text-center">
                                         return ?</a><br>
                                 </div>
@@ -65,8 +65,8 @@ if(isset($_SESSION['role'])){
 
                         </div>
                         <div class="col-lg-6">
-                            <!-- <img src="images/auth4.jpg" alt="" class="card-img" width="100%"> -->
-                            <h1 class="text-center"><b>Instructor</b></h1>
+                            <img src="images/auth3.jpg" alt="" class="card-img" width="100%">
+                            <!-- <h1 class="text-center"><b>Instructor</b></h1> -->
                         </div>
                     </div>
                 </div>

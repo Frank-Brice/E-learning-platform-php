@@ -1,6 +1,5 @@
 <?php
 
-
 $id = $_GET['id'];
 require("./db_connection.php");
 $sql = "SELECT * FROM courses WHERE id = $id";

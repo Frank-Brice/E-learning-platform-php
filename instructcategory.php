@@ -1,10 +1,8 @@
 <?php 
 session_start();
-if(isset($_SESSION['role'])){
-   header('location: instructhome.php');
-}
-$category = $_GET['name'];
-include "./components/navbar.php";
+
+$category = $_GET['names'];
+include "./components/instructnavbar.php";
 
 
 
@@ -38,7 +36,8 @@ $result= mysqli_query($connect,$sql);
                                     <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
                                     <div class="d-flex align-items-center justify-content-between">
                                     <a class="text-danger" href="delete.php?id='.$id.'"  onclick="return checkdelete()"><i class="fa-solid fa-trash-can"></i></a>
-                                    <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="instructdetails.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="download.php?downloaditem='. $video. '"> <i class="fa-solid fa-download text-success"></i></a>
                                     </div>
                                 </div>
                             </div>
