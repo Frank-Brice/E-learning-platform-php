@@ -57,26 +57,8 @@ if(isset($_POST['search-item'])){
                 $image = $row['course_image'];
                 $video = $row['course_video'];
                 $pdf = $row['pdf'];
-                if($_SESSION['name'] == 'Mathurin Wansi' || $_SESSION['role'] == 'instructor'){
-                    echo '<div class="col-lg-3 my-3 mx-4">
-                    <div class="card d-flex align-items-center justify-content-center" style="width: 18rem;">
-                      <video poster="/admin/images/'.$image.'" height="190px" controls class="card-img-top">
-                        <source src="/admin/videos/'.$video.'" type="video/mp4">
-                      </video>
-                        <div class="card-body">
-                            <div class="row">
-                                <h5 class="card-title text-center color">'.$courseTitle.'</h5>
-                                <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
-                                <div class="d-flex align-items-center justify-content-between">
-                                <a class="text-danger" href="delete.php?id='.$id.'"><i class="fa-solid fa-trash-can"></i></a>
-                                <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>';
-                }else{
-                    echo '<div class="col-lg-3 my-3 mx-4 ">
+                
+                    echo '<div class="col-lg-3 d-flex justify-content-space-between my-3 mx-4 ">
                     <div class="card d-flex align-items-center justify-content-center" style="width: 18rem;">
                       <video poster="/admin/images/'.$image.'" height="190px" controls class="card-img-top">
                         <source src="/admin/videos/'.$video.'" type="video/mp4">
@@ -92,7 +74,7 @@ if(isset($_POST['search-item'])){
                         </div>
                     </div>
                 </div>';
-                }
+                
                
             }
            }else{

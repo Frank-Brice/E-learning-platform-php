@@ -3,7 +3,7 @@
     if(isset($_SESSION['role'])){
    header('location: instructhome.php');
 }
-    if ($_SESSION['name']) {
+    if ($_SESSION['name'] ) {
     require("./db_connection.php");
     include('components/navbar.php');
     echo '<body class="aboutus">
@@ -19,8 +19,8 @@
         </div>
     </div>
     <!-- <section>ASSIGNMENT BANNER</section> -->';
-    include('./program.php');
-include('./programStudAssi.php');
+    include('./studprogram.php');
+include('./studprogramStudAssi.php');
       echo '<body class="aboutus">
     <div class="aboutsolution">
         <div class="row about-row">
@@ -28,7 +28,7 @@ include('./programStudAssi.php');
             </div>
         </div>
     </div>';
-include('./solution.php');
+include('./studsolution.php');
  echo '<body class="aboutus">
     <div class="aboutquiz">
         <div class="row about-row">
@@ -36,6 +36,8 @@ include('./solution.php');
             </div>
         </div>
     </div>';
+include "./quiz.php";
+echo "<br><br>";
 include "./components/footer.php";
     }else {
         # code...

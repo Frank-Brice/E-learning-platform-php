@@ -26,13 +26,13 @@ include('./programStudAssi.php');
         </div>
     </div>';
 include('./solution.php');
- echo '<body class="aboutus">
-    <div class="aboutquiz">
-        <div class="row about-row">
-            <div class="col-lg-6 about-banner ml-5 my-5">
-            </div>
-        </div>
-    </div>';
+//  echo '<body class="aboutus">
+//     <div class="aboutquiz">
+//         <div class="row about-row">
+//             <div class="col-lg-6 about-banner ml-5 my-5">
+//             </div>
+//         </div>
+//     </div>';
 include "./components/footer.php";
     }else {
         # code...

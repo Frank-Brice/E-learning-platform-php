@@ -19,25 +19,7 @@ $result = mysqli_query($connect, $sql);
                 $date = $row['date'];
                 $pdf = $row['solution_pdf'];
                 $id = $row['id'];
-                if ($_SESSION['name'] == 'Mathurin Wansi' || $_SESSION['role'] == "instructor") {
-                    $trash = '<i class="fa-solid fa-trash-can"></i>';
-                    $eye = '<i class="fa-solid fa-eye"></i>';
-                    $download ='<i class="fa-solid fa-download"></i>'; 
-               
-                    echo '<div class="col-lg-3 d-flex justify-content-space-between">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title text-center text-success">' . $name . '</h5>
-                        <iframe src="/admin/solution/' . $pdf . '" width="100%"></iframe>
-                        <div class="d-flex align-item-center justify-content-between" name="id">
-                            <a href="delete-solution.php?deleteitem='. $id. '" onclick="return checksolutiondelete()"> <i class="fa-solid fa-trash-can text-danger"></i></a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>';
-            
-                } else {
+    
                     echo '<div class="col-lg-3 d-flex justify-content-space-between">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
@@ -46,7 +28,7 @@ $result = mysqli_query($connect, $sql);
                     </div>
                 </div>
             </div>';
-                }
+                
                 
             }
         } else {
@@ -56,8 +38,3 @@ $result = mysqli_query($connect, $sql);
 
     </div>
 </div>
-<script>
-function checksolutiondelete() {
-    return confirm('Are you sure you want to delete this Solution ?');
-}
-</script>

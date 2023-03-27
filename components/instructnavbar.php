@@ -46,7 +46,7 @@
                     echo '<a class="" href="instructprogram-detail.php">
                     <li>Programs</li>
                 </a>';
-                    echo '<a href="/admin/admin.php" class="btn btn-dark btn-sm rounded-pill mx-2" style="margin-left: 18px;"><li>Dashboard</li></a>';
+                    echo '<a href="/admin/instructadmin.php" class="btn btn-dark btn-sm rounded-pill mx-2" style="margin-left: 18px;"><li>Dashboard</li></a>';
                 } else {
                     echo '<a href="program-detail.php"><li>Programs</li></a>';
                 }
@@ -87,7 +87,7 @@
                                 echo '<a class="" href="instructprogram-detail.php">
                     <li>Programs</li>
                 </a>';
-                                echo '<a href="/admin/main.admin.php" class="btn btn-sm rounded-pill bg-dark text-white"><li>Dashboard</li></a>';
+                                echo '<a href="/admin/instructmain.admin.php" class="btn btn-sm rounded-pill bg-dark text-white"><li>Dashboard</li></a>';
                             } else {
                                 echo '<a href="program-detail.php"><li>Programs</li></a>';
                             }

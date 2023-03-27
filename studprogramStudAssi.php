@@ -1,9 +1,6 @@
  <section>
      <?php 
-        if ($_SESSION['name'] == 'Mathurin Wansi' || $_SESSION['role'] == 'instructor') {
-            echo '<section><h1 class="text-center text-success"><b>ASSIGNMENT Submitted By Students</b></h1></section>';
-            include('./studentassignment.php');
-        }else {
+        
             echo '<div class="aboutsubmission">
         <div class="row about-row">
             <div class="col-lg-6 about-banner ml-5 my-5">
@@ -30,7 +27,7 @@
                     <input type="submit" class="form-btn btn btn-lg border px-3 py-2 my-1" style="background-color: #F27137; color: #fff;"
                                         value="Submit" name="submit">
         </form></section>';
-        }
+        
         ?>
 
  </section>

@@ -1,6 +1,9 @@
 <?php
 session_start();
-include('components/instructnavbar.php');
+if(isset($_SESSION['role'])){
+   header('location: instructhome.php');
+}
+include('components/navbar.php');
 
 include "db_connection.php";
 if(isset($_POST['search-item'])){
@@ -12,7 +15,7 @@ if(isset($_POST['search-item'])){
 <h1 class="d-flex align-item-center justify-content-center my-5">Get a Free Online C<span><img
             src="../images/nkap-removebg-preview.png" alt="" width="100%" height="40px"></span>urse</h1>
 <div id="box" class="container">
-    <form action="instructsearch-page.php" method="post">
+    <form action="search-page.php" method="post">
         &nbsp &nbsp
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" name="search-item" placeholder="Search for Course">
@@ -55,7 +58,7 @@ if(isset($_POST['search-item'])){
                 $video = $row['course_video'];
                 $pdf = $row['pdf'];
                 if($_SESSION['name'] == 'Mathurin Wansi' || $_SESSION['role'] == 'instructor'){
-                    echo '<div class="col-lg-3 my-3 mx-4">
+                    echo '<div class="col-lg-3 d-flex justify-content-space-between my-3 mx-4">
                     <div class="card d-flex align-items-center justify-content-center" style="width: 18rem;">
                       <video poster="/admin/images/'.$image.'" height="190px" controls class="card-img-top">
                         <source src="/admin/videos/'.$video.'" type="video/mp4">
@@ -65,7 +68,7 @@ if(isset($_POST['search-item'])){
                                 <h5 class="card-title text-center color">'.$courseTitle.'</h5>
                                 <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
                                 <div class="d-flex align-items-center justify-content-between">
-                                
+                                <a class="text-danger" href="delete.php?id='.$id.'"><i class="fa-solid fa-trash-can"></i></a>
                                 <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
                                 </div>
                             </div>
@@ -73,7 +76,7 @@ if(isset($_POST['search-item'])){
                     </div>
                 </div>';
                 }else{
-                    echo '<div class="col-lg-3 my-3 mx-4 ">
+                    echo '<div class="col-lg-3 d-flex justify-content-space-between my-3 mx-4 ">
                     <div class="card d-flex align-items-center justify-content-center" style="width: 18rem;">
                       <video poster="/admin/images/'.$image.'" height="190px" controls class="card-img-top">
                         <source src="/admin/videos/'.$video.'" type="video/mp4">

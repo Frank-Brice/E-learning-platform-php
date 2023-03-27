@@ -15,11 +15,11 @@ if ($result) {
      if (mysqli_num_rows($result) <= 0 ) {       // code to verify if there is no course in the database or not.
                 echo '';
             }else{
-                 echo '<h1><strong>WELCOME Mr/Mrs. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
-        '.$_SESSION['name'].' &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong></h1>';
+                 echo '<h1><strong>WELCOME Mr/Mrs. '.$_SESSION['name'].' to the world best institutions</strong></h1>
+        <p>Build skills with courses, certificates and degrees. Online from world class universities</p>';
             }
         } ?>
-                <p>Build skills with courses, certificates and degrees. Online from world class universities</p>
+
                 <button class="btn btn-lg btn-dark rounded-pill"> Here we are!</button>
             </div>
             <div class="col-lg-6">

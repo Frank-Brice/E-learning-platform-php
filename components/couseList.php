@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-3 my-3  d-flex justify-content-space-between">
+    <!-- <div class="col-lg-3 my-3  d-flex justify-content-space-between">
         <div class="card" style="width: 18rem;">
             <video poster="/images/couse5.jpg" height="173px" controls class="card-img-top">
                 <source src="images/video.mp4" type="video/mp4" class="card-video-top">
@@ -91,8 +91,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 my-3  d-flex justify-content-space-between">
+    </div> -->
+    <!-- <div class="col-lg-3 my-3  d-flex justify-content-space-between">
         <div class="card" style="width: 18rem;">
             <img src="/images/couse6.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -108,28 +108,28 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 my-3  d-flex justify-content-space-between">
-        <div class="card" style="width: 18rem;">
-            <!-- <img src="/images/couse7.jpg" class="card-img-top" alt="..."> -->
-            <video poster="/images/couse7.jpg" height="173px" controls class="card-img-top">
-                <source src="images/video7.mp4" type="video/mp4" class="card-video-top">
-            </video>
-            <div class="card-body">
-                <h5 class="card-title text-center">Digital Marketing</h5>
-                <div class="course-card-content">
-                    <div class="card-profile">
-                        <img src="/users/Profile63222b00bfe704.90059360.jpg" alt="" width="100%">
-                    </div>
-                    <div class="card-content">
-                        <h6>Thomas lewis<span class="badge text-bg-light text-success">Top mentor</span></h6>
-                        <p>Lecturer at Kent university</p>
-                    </div>
-                </div>
+    </div> -->
+    <!-- <div class="col-lg-3 my-3  d-flex justify-content-space-between">
+        <div class="card" style="width: 18rem;"> -->
+    <!-- <img src="/images/couse7.jpg" class="card-img-top" alt="..."> -->
+    <!-- <video poster="/images/couse7.jpg" height="173px" controls class="card-img-top">
+        <source src="images/video7.mp4" type="video/mp4" class="card-video-top">
+    </video>
+    <div class="card-body">
+        <h5 class="card-title text-center">Digital Marketing</h5>
+        <div class="course-card-content">
+            <div class="card-profile">
+                <img src="/users/Profile63222b00bfe704.90059360.jpg" alt="" width="100%">
+            </div>
+            <div class="card-content">
+                <h6>Thomas lewis<span class="badge text-bg-light text-success">Top mentor</span></h6>
+                <p>Lecturer at Kent university</p>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 my-3  d-flex justify-content-space-between">
+</div>
+</div> -->
+    <!-- <div class="col-lg-3 my-3  d-flex justify-content-space-between">
         <div class="card" style="width: 18rem;">
             <img src="/images/couse8.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -145,6 +145,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 <a href="courses.php"><button class="btn btn-lg btn-dark rounded-pill">View all courses</button></a>

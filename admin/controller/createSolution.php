@@ -18,7 +18,7 @@ if (isset($_POST['solution_title']) && isset($_POST['submit'])) {
           $fileDestination = '../solution/'.$pdf;
           move_uploaded_file($_FILES['solution_pdf']['tmp_name'],$fileDestination);
 
-          header("location:/admin/admin.php?solution=Solution set successfully");
+          header("location:/admin/instructadmin.php?solution=Solution set successfully");
     }else{
       echo "no Solution added ";
     }
