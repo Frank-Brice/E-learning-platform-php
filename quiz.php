@@ -52,6 +52,7 @@ $quiz = [
         }
 
         // Display the score
+        
         echo "Your score is: $score out of "  . count($quiz);
     }
 ?>
@@ -60,6 +61,7 @@ $quiz = [
 <div class="container">
     <form method="post">
         <?php foreach ($quiz as $key => $value) { ?>
+            <br>
         <p class="text-success"><?php echo $value["question"]; ?></p>
         <?php foreach ($value["options"] as $option_key => $option_value) { ?>
         <input type="radio" name="question<?php echo $key; ?>" value="<?php echo $option_key; ?>" required>
@@ -67,7 +69,7 @@ $quiz = [
         <?php } echo "<br>"; ?>
         <?php } ?>
         <br><br>
-        <input type="submit" class="btn btn-lg btn-danger rounded-pill" value="Submit">
-
+        <!-- <input type="submit" class="btn btn-lg rounded-pill" style="background-color: #F27137; color: white;" value="Submit"> -->
+        <input type="submit" class="form-btn btn btn-lg border px-3 py-2 my-1" style="background-color: #F27137; color: #fff;" value="Submit" name="submit">
     </form>
 </div>

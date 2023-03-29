@@ -39,6 +39,7 @@ $result= mysqli_query($connect,$sql);
                                     <div class="d-flex align-items-center justify-content-between">
                                     <a class="text-danger" href="delete.php?id='.$id.'"  onclick="return checkdelete()"><i class="fa-solid fa-trash-can"></i></a>
                                     <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
+                                    <a href="edit.php?id='. $id. '"> <i class="fa-solid fa-pen-to-square text-info"></i></a>
                                     </div>
                                 </div>
                             </div>

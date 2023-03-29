@@ -57,8 +57,27 @@ if(isset($_POST['search-item'])){
                 $image = $row['course_image'];
                 $video = $row['course_video'];
                 $pdf = $row['pdf'];
-                
-                    echo '<div class="col-lg-3 d-flex justify-content-space-between my-3 mx-4 ">
+                if ($_SESSION['name'] == 'Mathurin Wansi') {
+                     echo '<div class="col-lg-3 d-flex justify-content-space-between my-3 mx-4 ">
+                    <div class="card d-flex align-items-center justify-content-center" style="width: 18rem;">
+                      <video poster="/admin/images/'.$image.'" height="190px" controls class="card-img-top">
+                        <source src="/admin/videos/'.$video.'" type="video/mp4">
+                      </video>
+                        <div class="card-body">
+                            
+                                <h5 class="card-title text-center color">'.$courseTitle.'</h5>
+                                <iframe src="/admin/pdf/' . $pdf . '" width="100%"></iframe>
+                                <div class="d-flex align-item-center justify-content-between" name="id">
+                                <a href="delete.php?deleteitem='. $id. '" onclick="return checkdelete()"> <i class="fa-solid fa-trash-can text-danger"></i></a>
+                                <a href="details.php?id='.$id.'"><i class="fa-solid fa-eye"></i></a>
+                                <a href="edit.php?id='. $id. '"> <i class="fa-solid fa-pen-to-square text-info"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>';
+                }
+                else{
+                     echo '<div class="col-lg-3 d-flex justify-content-space-between my-3 mx-4 ">
                     <div class="card d-flex align-items-center justify-content-center" style="width: 18rem;">
                       <video poster="/admin/images/'.$image.'" height="190px" controls class="card-img-top">
                         <source src="/admin/videos/'.$video.'" type="video/mp4">
@@ -74,6 +93,7 @@ if(isset($_POST['search-item'])){
                         </div>
                     </div>
                 </div>';
+                }
                 
                
             }
@@ -83,6 +103,11 @@ if(isset($_POST['search-item'])){
     }
     
     ?> </div>
+<script>
+function checkdelete() {
+    return confirm('Are you sure you want to Delete this Course ?');
+}
+</script>
 <?php
 include('components/footer.php');
 ?>

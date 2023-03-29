@@ -22,6 +22,7 @@ $result = mysqli_query($connect, $sql);
                     $trash = '<i class="fa-solid fa-trash-can"></i>';
                     $eye = '<i class="fa-solid fa-eye"></i>';
                     $download ='<i class="fa-solid fa-download"></i>'; 
+                    $edit ='<i class="fa-solid fa-pen-to-square text-info"></i>'; 
                     echo '<div class="col-lg-3 d-flex justify-content-space-between">
                 <div class="card" style="width: 18rem;">
                     <video poster="/admin/images/' . $image . '" height="173px"  controls class="card-img-top">
@@ -33,6 +34,7 @@ $result = mysqli_query($connect, $sql);
                         <div class="d-flex align-item-center justify-content-between" name="id">
                             <a href="delete.php?deleteitem='. $id. '" onclick="return checkdelete()"> <i class="fa-solid fa-trash-can text-danger"></i></a>
                             <a href="details.php?id='. $id. '"> <i class="fa-solid fa-eye"></i></a>
+                            <a href="edit.php?id='. $id. '"> <i class="fa-solid fa-pen-to-square text-info"></i></a>
                             
                         </div>
                     </div>
